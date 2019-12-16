@@ -1,0 +1,58 @@
+* {
+  transition: .5s ease-in;
+}
+
+div.main {
+  background-image: url('../images/main-2.jpg');
+}
+
+.section {
+  background-image: url('../images/upper-bg.jpg');
+  position: relative;
+}
+
+.section .container {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.container h2 {
+  position: absolute;
+  top: 20px;
+}
+
+.s6 {
+  position: relative;
+}
+
+.hover-more {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 1s;
+}
+
+
+.col.s6.open>.hover-more {
+  display: none !important;
+}
+
+.col.s6.hidden>.content {
+  display: none;
+}
+
+.col.s6.hidden>.hover-more,
+.col.s6.hover>.hover-more {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.first,
+.second {
+  position: relative;
+}
