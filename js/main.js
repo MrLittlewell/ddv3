@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   $('.modal').modal();
 
   $('#fullpage').fullpage({
@@ -53,3 +54,6 @@ $('.3nd-items .second').click(function () {
   $('.3nd-items .first').css("width", "10%").addClass('hidden').removeClass('open')
 })
 
+$('.carousel').carousel({
+  fullWidth: true
+});
