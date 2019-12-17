@@ -3530,8 +3530,8 @@ nav ul a span.badge {
 @media only screen and (min-width: 993px) {}
 
 .container .row {
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
+  /* margin-left: -0.75rem;
+  margin-right: -0.75rem; */
   width: 100%;
 }
 
@@ -3563,7 +3563,7 @@ nav ul a span.badge {
   float: left;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0 0.75rem;
+  /* padding: 0 0.75rem; */
   min-height: 1px;
 }
 
@@ -4768,7 +4768,7 @@ html {
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  color: rgba(0, 0, 0, 0.87);
+  color: #2f4353;
 }
 
 @media only screen and (min-width: 0) {

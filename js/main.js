@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  $('.modal').modal();
+
   $('#fullpage').fullpage({
     navigation: true,
     // responsiveWidth: 500,
@@ -31,3 +33,23 @@ $('.2nd-items .second').click(function () {
   $(this).css("width", "90%").removeClass('hidden').addClass('open');
   $('.2nd-items .first').css("width", "10%").addClass('hidden').removeClass('open')
 })
+
+
+$(".3nd-items .col.s6").hover(
+  function () {
+    $(this).addClass('hover');
+  }, function () {
+    $(this).removeClass('hover');
+  }
+);
+
+$('.3nd-items .first').click(function () {
+  $(this).css("width", "90%").removeClass('hidden').addClass('open');
+  $('.3nd-items .second').css("width", "10%").addClass('hidden').removeClass('open');
+})
+
+$('.3nd-items .second').click(function () {
+  $(this).css("width", "90%").removeClass('hidden').addClass('open');
+  $('.3nd-items .first').css("width", "10%").addClass('hidden').removeClass('open')
+})
+

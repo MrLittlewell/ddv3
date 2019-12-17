@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
   <link rel="stylesheet" type="text/css" href="css/materialize.css" />
   <link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -12,8 +13,52 @@
 
 <body>
   <main>
+    <nav class="menu-bar">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"><img src="./images/icons/logo-dd-red.png" alt="logo"></a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Главная</a></li>
+          <li>
+            <a class="dropdown-button" href="#!" data-activates="our-prod">Наша продукция<i
+                class="material-icons right">arrow_drop_down</i></a>
+          </li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">+375 (29) 555-55-55</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Наша продукция</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">+375 (29) 555-55-55</a></li>
+        </ul>
+      </div>
+      <ul id="our-prod" class="dropdown-content">
+        <li><a href="#2nd">Книга внакидку</a></li>
+        <li><a href="#2nd/1">Книга втачку</a></li>
+        <li><a href="#2nd/2">Лэй флэт</a></li>
+        <li><a href="#2nd/3">Октет</a></li>
+        <li><a href="#2nd/4">Планшет</a></li>
+        <li><a href="#2nd/5">Трюмо</a></li>
+        <li><a href="#2nd/6">Фотокниги</a></li>
+      </ul>
+    </nav>
+
     <div id="fullpage">
-      <div class="section main">Определённый раздел</div>
+      <div class="section main">
+        <div id="page-one" class="d-flex-c">
+          <div class="main-title">
+            <img src="./images/icons/logo-dd-red.png" alt="logo">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, itaque.</p>
+          </div>
+          <div class="scroll-icon">
+            <p>Прокрутка вниз</p>
+            <a href="#2nd" class="icon-up-open-big"></a>
+          </div>
+        </div>
+      </div>
       <div class="section 2nd-page">
         <div class="container">
           <h2>Свадебные альбомы</h2>
@@ -22,8 +67,9 @@
               <div class="hover-more">
                 <p>Подробнее</p>
               </div>
+              <h3>Фотокниги</h3>
               <div class="content">
-                <h3>Фотокниги</h3>
+
               </div>
 
             </div>
@@ -31,8 +77,9 @@
               <div class="hover-more">
                 <p>Подробнее</p>
               </div>
+              <h3>Полиграфия</h3>
               <div class="content">
-                <h3>Полиграфия</h3>
+
               </div>
 
             </div>
@@ -41,17 +88,231 @@
       </div>
       <div class="section 3th-page">
         <div class="container">
-          Определённый раздел
+          <h2>Выпускные альбомы</h2>
+          <div class="row 3nd-items">
+            <div class="col s6 first">
+              <div class="hover-more">
+                <p>Подробнее</p>
+              </div>
+              <h3>Книги<br>(тверный переплёт)</h3>
+              <div class="content">
+                <div class="row">
+                  <div class="hard__items col s4">
+                    <div>
+                      <a class="modal-trigger" href="#hard-one">
+                        <div class="items__link">
+                          <p>Книга внакидку</p>
+                          <img src="./images/products/tverdy/knigavnakid/front.jpg" alt="">
+                        </div>
+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="hard__items col s4">
+                    <div>
+                      <a class="modal-trigger" href="#hard-two">
+                        <div class="items__link">
+                          <p>Книга втачку</p>
+                          <img src="./images/products/tverdy/knigavtach/front.jpg" alt="">
+                        </div>
+                      </a>
+
+                    </div>
+                  </div>
+                  <div class="hard__items col s4">
+                    <div>
+                      <a class="modal-trigger" href="#hard-three">
+                        <div class="items__link">
+                          <p>Лэй флет</p>
+                          <img src="./images/products/tverdy/layflat/front.jpg" alt="">
+                        </div>
+
+                      </a>
+
+                    </div>
+                  </div>
+                  <div class="hard__items col s4">
+                    <div>
+                      <a class="modal-trigger" href="#hard-four">
+                        <div class="items__link">
+                          <p>Октет</p>
+                          <img src="./images/products/tverdy/oktet/front.jpg" alt="">
+                        </div>
+                      </a>
+
+                    </div>
+                  </div>
+                  <div class="hard__items col s4">
+                    <div>
+                      <a class="modal-trigger" href="#hard-five">
+                        <div class="items__link">
+                          <p>Планшет</p>
+                          <img src="./images/products/tverdy/planshet/front.jpg" alt="">
+                        </div>
+                      </a>
+
+                    </div>
+                  </div>
+                  <div class="hard__items col s4">
+                    <div>
+                      <a class="modal-trigger" href="#hard-six">
+                        <div class="items__link">
+                          <p>Трюмо</p>
+                          <img src="./images/products/tverdy/trumo/front.jpg" alt="">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="col s6 second">
+              <div class="hover-more">
+                <p>Подробнее</p>
+              </div>
+              <h3>Журналы<br>(мягкий переплёт)</h3>
+              <div class="content">
+                <div class="row">
+                  <div class="soft__items col s4">
+                    <div>
+                      <a class="modal-trigger" href="#soft-one">
+                        <div class="items__link">
+                          <p>Журнал</p>
+                          <img src="./images/products/miakgiy/jurnal/front.jpg" alt="">
+                        </div>
+                      </a>
+
+                    </div>
+                  </div>
+                  <div class="soft__items col s4">
+                    <div>
+                      <a class="modal-trigger" href="#soft-two">
+                        <div class="items__link">
+                          <p>Квартет</p>
+                          <img src="./images/products/miakgiy/kvartet/front.jpg" alt="">
+                        </div>
+                      </a>
+
+                    </div>
+                  </div>
+                  <div class="soft__items col s4">
+                    <div>
+                      <a class="modal-trigger" href="#soft-three">
+                        <div class="items__link">
+                          <p>Разворот</p>
+                          <img src="./images/products/miakgiy/razvorot/front.jpg" alt="">
+                        </div>
+                      </a>
+
+                    </div>
+                  </div>
+                  <div class="soft__items col s4">
+                    <div>
+                      <a class="modal-trigger" href="#soft-four">
+                        <div class="items__link">
+                          <p>Супержурнал</p>
+                          <img src="./images/products/miakgiy/superjurnal/front.jpg" alt="">
+                        </div>
+                      </a>
+
+                    </div>
+                  </div>
+                  <div class="soft__items col s4">
+                    <div>
+                      <a class="modal-trigger" href="#soft-five">
+                        <div class="items__link">
+                          <p>Трио</p>
+                          <img src="./images/products/miakgiy/trio/front.jpg" alt="">
+                        </div>
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
       <div class="section 4th-page">
         <div class="container">
-          Определённый раздел
+          <h2>Фотопроекты</h2>
         </div>
       </div>
       <div class="section 5th-page">
         <div class="container">
-          Определённый раздел
+          <h2>Сувенирная продукция</h2>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modals">
+      <div id="hard-one" class="modal">
+        <div class="modal-content">
+          <h3>Книга внакидку</h3>
+        </div>
+      </div>
+
+      <div id="hard-two" class="modal">
+        <div class="modal-content">
+          <h3>Книга втачку</h3>
+        </div>
+      </div>
+
+      <div id="hard-three" class="modal">
+        <div class="modal-content">
+          <h3>Лэй флет</h3>
+        </div>
+      </div>
+
+      <div id="hard-four" class="modal">
+        <div class="modal-content">
+          <h3>Октет</h3>
+        </div>
+      </div>
+
+      <div id="hard-five" class="modal">
+        <div class="modal-content">
+          <h3>Планшет</h3>
+        </div>
+      </div>
+
+      <div id="hard-six" class="modal">
+        <div class="modal-content">
+          <h3>Трюмо</h3>
+        </div>
+      </div>
+
+      <div id="soft-one" class="modal">
+        <div class="modal-content">
+          <h3>Журнал</h3>
+        </div>
+      </div>
+
+      <div id="soft-two" class="modal">
+        <div class="modal-content">
+          <h3>Квартет</h3>
+        </div>
+      </div>
+
+      <div id="soft-three" class="modal">
+        <div class="modal-content">
+          <h3>Разворот</h3>
+        </div>
+      </div>
+
+      <div id="soft-four" class="modal">
+        <div class="modal-content">
+          <h3>Супержурнал</h3>
+        </div>
+      </div>
+
+      <div id="soft-five" class="modal">
+        <div class="modal-content">
+          <h3>Трио</h3>
         </div>
       </div>
     </div>
@@ -63,6 +324,7 @@
   <script type="text/javascript" src="js/fullpage.js"></script>
   <script type="text/javascript" src="js/fullpage.extensions.min.js"></script>
   <script type="text/javascript" src="js/easings.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 </body>
 
