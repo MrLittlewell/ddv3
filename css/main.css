@@ -36,6 +36,7 @@ div.main {
   transition: all 1s;
   border-radius: 10px;
   z-index: 500;
+  box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -59,6 +60,7 @@ div.main {
 .first,
 .second {
   position: relative;
+  margin-top: 20px;
 }
 
 .first {
@@ -123,10 +125,11 @@ h2:before {
   content: '';
   width: 380px;
   height: 60px;
-  border: 6px solid #d1d1d1;
+  border: 6px solid #cccccc;
   background-color: transparent;
   z-index: -1;
   transform: translate(-20px, -10px);
+  box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
 }
 
 .main-title {
@@ -158,7 +161,7 @@ h2:before {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   min-width: 200px;
-  max-width: 320px;
+  max-width: 280px;
 }
 
 .modal-trigger:hover .hard__items img,
@@ -182,8 +185,13 @@ h2:before {
   align-items: center;
 }
 
+.open .content {
+  align-items: baseline;
+}
+
 .modal {
   width: 90%;
+  max-height: 100%;
 }
 
 .modal-trigger>div {
@@ -211,21 +219,27 @@ h2:before {
 .modal-trigger>div:hover p {
   display: flex;
 }
+
 .page-items {
   height: 100%;
 }
-.open .hard__items img, .open .soft__items img {
+
+.open .hard__items img,
+.open .soft__items img {
   max-width: 430px;
 }
+
 .modal-content img {
   width: 100%;
 }
+
 .content>.row {
   justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
 }
+
 body .btn,
 .btn-large {
   background-image: linear-gradient(155deg, #a40606 0%, #d98324 74%);
@@ -237,25 +251,32 @@ body .btn:hover,
 .btn-large:active {
   background-image: linear-gradient(155deg, #d98324 0%, #a40606 74%);
 }
+
 .downloads .btn {
   margin: 5px;
 }
+
 p {
   margin: 5px;
 }
+
 .carousel .carousel-item {
   transition: none;
 }
+
 .second-page-items .content {
   display: block;
-  padding-top: 50px;
+  padding-top: 20px;
 }
+
 .row.second-page-items div.photo {
   width: 100%;
-} 
+}
+
 .row.second-page-items .open div.photo {
   width: 66.6666666667%;
 }
+
 .second-page-items .info {
   display: none;
 }
@@ -265,6 +286,7 @@ p {
   border-left: 1px solid #cccccc;
   padding: 0 15px;
 }
+
 .second-page-items .open .info h3 {
   padding-bottom: 15px;
   border-bottom: 1px solid #cccccc;
@@ -273,45 +295,64 @@ p {
 .second-page-items .open .carousel {
   min-height: 490px;
 }
+
 .second-page-items .downloads button {
   min-width: 130px;
 }
+
 .second-page-items {
   border-top: 1px solid #cccc;
 }
+
 .card-panel {
   border-radius: 20px;
 }
+
 .modal-content>.row>.col.s6:nth-child(2) {
   padding-left: 20px;
 }
-.fp-slidesNav.fp-bottom ul{
+
+.fp-slidesNav.fp-bottom ul {
   text-align: center;
 }
+
 .fp-controlArrow {
   top: 60%;
 }
+
 .fp-controlArrow.fp-next {
   border-color: transparent transparent transparent #b60000;
 }
+
 .fp-controlArrow.fp-prev {
   border-color: transparent #b60000 transparent transparent;
 }
+
 .fp-tableCell>.col {
   height: 100%;
 }
+
 .fp-tableCell>.col .carousel {
   min-height: 620px;
 }
+
 .slide .col.s4 {
   padding: 0 20px;
 }
+
 .slide .col.s4 button {
   margin: 0 auto;
 }
 
+.tabs .tab a:hover,
+.tabs .tab a.active {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
 
-
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #a40606;
+}
 
 
 
@@ -324,32 +365,48 @@ p {
 
 
 @media only screen and (max-width: 1650px) {
-  .hard__items img, .soft__items img {
+
+  .hard__items img,
+  .soft__items img {
     max-width: 320px;
   }
 }
+
 @media only screen and (max-width: 1580px) {
-  .hard__items img, .soft__items img {
+
+  .hard__items img,
+  .soft__items img {
     max-width: 320px;
   }
-  .open .hard__items img, .open .soft__items img {
+
+  .open .hard__items img,
+  .open .soft__items img {
     max-width: 400px;
   }
 }
 
 @media only screen and (max-width: 1480px) {
-  .hard__items img, .soft__items img {
+
+  .hard__items img,
+  .soft__items img {
     max-width: 250px;
   }
-  .open .hard__items img, .open .soft__items img {
+
+  .open .hard__items img,
+  .open .soft__items img {
     max-width: 340px;
   }
 }
+
 @media only screen and (max-width: 1150px) {
-  .hard__items img, .soft__items img {
+
+  .hard__items img,
+  .soft__items img {
     max-width: 250px;
   }
-  .open .hard__items img, .open .soft__items img {
+
+  .open .hard__items img,
+  .open .soft__items img {
     max-width: 320px;
   }
 }
