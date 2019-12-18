@@ -1,11 +1,12 @@
 $(document).ready(function () {
 
   $('.modal').modal();
+  $('.tabs').tabs();
 
   $('#fullpage').fullpage({
     navigation: true,
     // responsiveWidth: 500,
-    scrollHorizontally: false,
+    scrollHorizontally: true,
     loopHorizontal: false,
     slidesNavigation: true,
     slidesNavPosition: 'bottom',
@@ -17,7 +18,7 @@ $(document).ready(function () {
   $.fn.fullpage.setAllowScrolling(true);
 });
 
-$(".2nd-items .col.s6").hover(
+$(".second-page-items .col.s6").hover(
   function () {
     $(this).addClass('hover');
   }, function () {
@@ -25,18 +26,18 @@ $(".2nd-items .col.s6").hover(
   }
 );
 
-$('.2nd-items .first').click(function () {
+$('.second-page-items .first').click(function () {
   $(this).css("width", "90%").removeClass('hidden').addClass('open');
-  $('.2nd-items .second').css("width", "10%").addClass('hidden').removeClass('open');
+  $('.second-page-items .second').css("width", "10%").addClass('hidden').removeClass('open');
 })
 
-$('.2nd-items .second').click(function () {
+$('.second-page-items .second').click(function () {
   $(this).css("width", "90%").removeClass('hidden').addClass('open');
-  $('.2nd-items .first').css("width", "10%").addClass('hidden').removeClass('open')
+  $('.second-page-items .first').css("width", "10%").addClass('hidden').removeClass('open')
 })
 
 
-$(".3nd-items .col.s6").hover(
+$(".third-page-items .col.s6").hover(
   function () {
     $(this).addClass('hover');
   }, function () {
@@ -44,16 +45,21 @@ $(".3nd-items .col.s6").hover(
   }
 );
 
-$('.3nd-items .first').click(function () {
+$('.third-page-items .first').click(function () {
   $(this).css("width", "90%").removeClass('hidden').addClass('open');
-  $('.3nd-items .second').css("width", "10%").addClass('hidden').removeClass('open');
+  $('.third-page-items .second').css("width", "10%").addClass('hidden').removeClass('open');
 })
 
-$('.3nd-items .second').click(function () {
+$('.third-page-items .second').click(function () {
   $(this).css("width", "90%").removeClass('hidden').addClass('open');
-  $('.3nd-items .first').css("width", "10%").addClass('hidden').removeClass('open')
+  $('.third-page-items .first').css("width", "10%").addClass('hidden').removeClass('open')
 })
 
-$('.carousel').carousel({
-  fullWidth: true
+$('.carousel.carousel-slider').carousel({
+  fullWidth: true,
+  indicators: true
 });
+
+$('.downloads button').click(function(){
+  alert('Добавлю для скачки')
+})
