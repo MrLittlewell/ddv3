@@ -59,7 +59,3 @@ $('.carousel.carousel-slider').carousel({
   fullWidth: true,
   indicators: true
 });
-
-$('.downloads button').click(function(){
-  alert('Добавлю для скачки')
-})

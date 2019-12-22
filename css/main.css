@@ -353,11 +353,52 @@ p {
 .fp-slidesNav ul li a span {
   background: #a40606;
 }
-
-
-
-
-
+.order-modal {
+  width: 25%;
+  min-width: 275px;
+  border-radius: 20px;
+  padding: 0 24px 0 24px;
+}
+.order-modal button {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  background: #b60101;
+}
+.modal-content h3 {
+  margin-bottom: 20px;
+}
+.order-modal h4 {
+  text-align: center;
+  border: 1px solid #b60101;
+  border-radius: 0 0 10px 10px;
+  border-top: none;
+  padding: 5px 0;
+  color: white;
+  background: #b60101;
+  font-size: 25px;
+}
+.order-modal .modal-content>.row {
+  margin-bottom: 0;
+}
+#callform {
+  margin-bottom: 0;
+}
+.suveniry .s4 {
+  text-align: center;
+}
+.suveniry img {
+  max-width: 300px;
+}
+.suveniry .container {
+  flex-direction: column;
+}
+.suveniry .container h2 {
+  left: 5%;
+}
+.suveniry .s4 h3 {
+  margin-bottom: 10px;
+  color: #2f4353;
+}
 
 
 

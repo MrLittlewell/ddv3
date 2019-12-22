@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
   <link rel="stylesheet" type="text/css" href="css/materialize.css" />
   <link rel="stylesheet" type="text/css" href="css/main.css" />
-  <title>Document</title>
+  <title>Добры друк</title>
 </head>
 
 <body>
@@ -53,10 +53,10 @@
             <img src="./images/icons/logo-dd-red.png" alt="logo">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, itaque.</p>
           </div>
-          <div class="scroll-icon">
+          <!-- <div class="scroll-icon">
             <p>Прокрутка вниз</p>
             <a href="#2nd" class="icon-up-open-big"></a>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="section 2nd-page">
@@ -316,7 +316,7 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, labore!</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, labore!</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, labore!</p>
-              <button class="btn waves-effect waves-light">Заказать</button>
+              <button class="btn waves-effect waves-light modal-trigger" data-target="order">Заказать</button>
             </div>
           </div>
           <div class="slide row">
@@ -331,7 +331,7 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, labore!</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, labore!</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, labore!</p>
-              <button class="btn waves-effect waves-light">Заказать</button>
+              <button class="btn waves-effect waves-light modal-trigger" data-target="order">Заказать</button>
             </div>
           </div>
           <div class="slide row">
@@ -346,16 +346,51 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, labore!</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, labore!</p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, labore!</p>
-              <button class="btn waves-effect waves-light">Заказать</button>
+              <button class="btn waves-effect waves-light modal-trigger" data-target="order">Заказать</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="section 5th-page">
+      <div class="section 5th-page suveniry">
         <div class="container">
           <h2>Сувенирная продукция</h2>
+          <div class="row">
+            <div class="col s4"><a href="#suv-one" class="modal-trigger">
+                <h3>Значки</h3><img src="./images/products/suveniry/badge.jpg" alt="">
+              </a>
+
+            </div>
+            <div class="col s4"><a href="#suv-two" class="modal-trigger">
+                <h3>Календари</h3><img src="./images/products/suveniry/calendar.jpg" alt="">
+              </a>
+
+            </div>
+            <div class="col s4"><a href="#suv-three" class="modal-trigger">
+                <h3>Кружки</h3><img src="./images/products/suveniry/cups.jpg" alt="">
+              </a>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s4"><a href="#suv-four" class="modal-trigger">
+                <h3>Рамка магнит</h3><img src="./images/products/suveniry/leaflets.jpg" alt="">
+              </a>
+
+            </div>
+            <div class="col s4"><a href="#suv-five" class="modal-trigger">
+                <h3>Магниты</h3><img src="./images/products/suveniry/magnet.jpg" alt="">
+              </a>
+
+            </div>
+            <div class="col s4"><a href="#suv-six" class="modal-trigger">
+                <h3>Холсты</h3><img src="./images/products/suveniry/poster.jpg" alt="">
+              </a>
+
+            </div>
+          </div>
         </div>
       </div>
+    </div>
     </div>
 
 
@@ -391,15 +426,21 @@
               </div>
               <h3>Скачать шаблоны:</h3>
               <div class="downloads">
-                <button class="btn waves-effect waves-light">19x25</button>
-                <button class="btn waves-effect waves-light">20x20</button>
-                <button class="btn waves-effect waves-light">20x30</button>
-                <button class="btn waves-effect waves-light">30x20</button>
-                <button class="btn waves-effect waves-light">22x25</button>
-                <button class="btn waves-effect waves-light">23x31</button>
-                <button class="btn waves-effect waves-light">30x30</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/твердый переплёт/Книга внакидку(стандарт)/шаблоны/19х25.zip')">19x25</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/твердый переплёт/Книга внакидку(стандарт)/шаблоны/20х20.zip')">20x20</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/твердый переплёт/Книга внакидку(стандарт)/шаблоны/20х30горизонт.zip')">20x30</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/твердый переплёт/Книга внакидку(стандарт)/шаблоны/30х20.zip')">30x20</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/твердый переплёт/Книга внакидку(стандарт)/шаблоны/22х25.zip')">22x25</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/твердый переплёт/Книга внакидку(стандарт)/шаблоны/23х31.zip')">23x31</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/твердый переплёт/Книга внакидку(стандарт)/шаблоны/30х30.zip')">30x30</button>
               </div>
-
             </div>
           </div>
         </div>
@@ -429,8 +470,6 @@
             </div>
             <div class="col s6">
               <div class="card-panel z-depth-4">
-                <h2>Книга втачку</h2>
-
                 <p>Твердый переплет из картона толщиной 2 мм.</p>
                 <p>Сшивка блока втачку на нитку либо на удлиненные скобы, т.е. внутренние листы с форзацами сшиваются по
                   краю блока и вклеиваются в твердую обложку.</p>
@@ -442,12 +481,18 @@
               </div>
               <h3>Скачать шаблоны:</h3>
               <div class="downloads">
-                <button class="btn waves-effect waves-light">20x30 гориз.</button>
-                <button class="btn waves-effect waves-light">22x30 верт.</button>
-                <button class="btn waves-effect waves-light">30x30</button>
-                <button class="btn waves-effect waves-light">15x21 гориз.</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/твердый переплёт/книга втачку/шаблоны/20х30.zip')">20x30
+                  гориз.</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/твердый переплёт/книга втачку/шаблоны/22х30.zip')">22x30
+                  верт.</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/твердый переплёт/книга втачку/шаблоны/30х30.zip')">30x30</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/твердый переплёт/книга втачку/шаблоны/15х21-горизонт.zip')">15x21
+                  гориз.</button>
               </div>
-
             </div>
           </div>
         </div>
@@ -479,8 +524,6 @@
             </div>
             <div class="col s6">
               <div class="card-panel z-depth-4">
-                <h2>Лэйфлэт</h2>
-
                 <p>Твердый переплет из картона толщиной 2 мм.</p>
                 <p> Внутренние развороты печатаются на бумаге 300 грамм, ламинируются и склеиваются между собой. Аналог
                   фотокниги, только вместо фотопечати полиграфия.</p>
@@ -491,11 +534,11 @@
               </div>
               <h3>Скачать шаблоны:</h3>
               <div class="downloads">
-                <button class="btn waves-effect waves-light">19x25</button>
-                <button class="btn waves-effect waves-light">22x31</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/твердый переплёт/лэйфлет/шаблоны/19х25.zip')">19x25</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/твердый переплёт/лэйфлет/шаблоны/22х31.zip')">22x31</button>
               </div>
-
-
             </div>
           </div>
         </div>
@@ -519,8 +562,6 @@
             </div>
             <div class="col s6">
               <div class="card-panel z-depth-4">
-                <h2>Октет</h2>
-
                 <p>Твердый переплет из картона толщиной 2 мм.</p>
                 <p>Этот панорамный альбом состоит из 4-х картонок, которые компактно складываются в альбом формата 15х21
                   см.</p>
@@ -530,7 +571,8 @@
               </div>
               <h3>Скачать шаблоны:</h3>
               <div class="downloads">
-                <button class="btn waves-effect waves-light">15x21</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/твердый переплёт/октет/15х21.zip')">15x21</button>
               </div>
 
 
@@ -559,8 +601,6 @@
             </div>
             <div class="col s6">
               <div class="card-panel z-depth-4">
-                <h2>Планшет</h2>
-
                 <p>Стандартный твердый переплет из картона толщиной 2 мм.</p>
                 <p>Самый недорогой вид продукции.</p>
                 <p>Обязательная ламинация обложки и форзаца.</p>
@@ -569,11 +609,11 @@
               </div>
               <h3>Скачать шаблоны:</h3>
               <div class="downloads">
-                <button class="btn waves-effect waves-light">20x30</button>
-                <button class="btn waves-effect waves-light">23x31</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/твердый переплёт/планшет/шаблоны/20х30.zip')">20x30</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/твердый переплёт/планшет/шаблоны/23х31.zip')">23x31</button>
               </div>
-
-
             </div>
           </div>
         </div>
@@ -599,8 +639,6 @@
             </div>
             <div class="col s6">
               <div class="card-panel z-depth-4">
-                <h2>Трюмо</h2>
-
                 <p>Твердый переплет из картона толщиной 2 мм.</p>
                 <p>Этот панорамный альбом состоит из 3-х картонок, которые компактно складываются в альбом формата А4.
                 </p>
@@ -610,11 +648,13 @@
               </div>
               <h3>Скачать шаблоны:</h3>
               <div class="downloads">
-                <button class="btn waves-effect waves-light">20x30 верт.</button>
-                <button class="btn waves-effect waves-light">20x30 гориз.</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/твердый переплёт/трюмо/шаблоны/20х30-вертикальный.zip')">20x30
+                  верт.</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/твердый переплёт/трюмо/шаблоны/20х30-горизонтальный.zip')">20x30
+                  гориз.</button>
               </div>
-
-
             </div>
           </div>
         </div>
@@ -626,32 +666,38 @@
           <div class="row">
             <div class="col s6">
               <ul id="tabs-swipe-demo" class="tabs tabs-fixed-width">
-                <li class="tab"><a href="#test-swipe-1">№1</a></li>
-                <li class="tab"><a class="active" href="#test-swipe-2"> №2</a></li>
-                <li class="tab"><a href="#test-swipe-3"> №3</a></li>
+                <li class="tab"><a class="active" href="#soft-one-1">№1</a></li>
               </ul>
-              <div id="test-swipe-1" class="col s12"><img src="./images/products/tverdy/knigavnakid/face-r.jpg" alt="">
+              <div id="soft-one-1" class="col s12"><img src="./images/products/miakgiy/jurnal/front.jpg" alt="">
               </div>
-              <div id="test-swipe-2" class="col s12"><img src="./images/products/tverdy/knigavnakid/one-r.jpg" alt="">
-              </div>
-              <div id="test-swipe-3" class="col s12"><img src="./images/products/tverdy/knigavnakid/two-r.jpg" alt="">
-              </div>
-
             </div>
             <div class="col s6">
               <div class="card-panel z-depth-4">
-                <h2>Книга стандартная</h2>
-
-                <p>Твердый переплет из картона толщиной 2 мм.</p>
-                <p>Сшивка блока внакидку на нитку, листы раскрываются на 180 градусов.</p>
-                <p>Обязательная ламинация обложки и форзаца. Внутренние листы ламинируются по желанию.</p>
-                <p>Виды ламинации: глянцевая, матовая, антицарапин.</p>
+                <p>Мягкий переплёт. Обложка - двухсторонняя печать на бумаге 300 грамм с обязательной двухсторонней
+                  ламинацией.</p>
+                <p>Сшивка на скобу (журнал раскрывается на 180 градусов).</p>
+                <p>Виды ламинации: глянцевая, матовая.</p>
                 <p>На 1 печатный лист внутреннего блока помещается 4 страницы.</p>
                 <button class="btn waves-effect waves-light modal-trigger" data-target="order">Заказать</button>
               </div>
-              <h2>Размеры:</h2>
-
-
+              <h3>Скачать шаблоны:</h3>
+              <div class="downloads">
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/мягкий переплет/журнал/шаблоны/19х25.zip')">19x25</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/мягкий переплет/журнал/шаблоны/20х20.zip')">20x20</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/мягкий переплет/журнал/шаблоны/20х30.zip')">20x30</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/мягкий переплет/журнал/шаблоны/20х30-горизонт.zip')">22x30
+                  гориз.</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/мягкий переплет/журнал/шаблоны/22х25.zip')">22x25</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/мягкий переплет/журнал/шаблоны/22х30.zip')">22x30</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/мягкий переплет/журнал/шаблоны/30х30.zip')">30x30</button>
+              </div>
             </div>
           </div>
         </div>
@@ -663,32 +709,23 @@
           <div class="row">
             <div class="col s6">
               <ul id="tabs-swipe-demo" class="tabs tabs-fixed-width">
-                <li class="tab"><a href="#test-swipe-1">№1</a></li>
-                <li class="tab"><a class="active" href="#test-swipe-2"> №2</a></li>
-                <li class="tab"><a href="#test-swipe-3"> №3</a></li>
-              </ul>
-              <div id="test-swipe-1" class="col s12"><img src="./images/products/tverdy/knigavnakid/face-r.jpg" alt="">
-              </div>
-              <div id="test-swipe-2" class="col s12"><img src="./images/products/tverdy/knigavnakid/one-r.jpg" alt="">
-              </div>
-              <div id="test-swipe-3" class="col s12"><img src="./images/products/tverdy/knigavnakid/two-r.jpg" alt="">
-              </div>
+                <li class="tab"><a class="active" href="#soft-two-1">№1</a></li>
 
+              </ul>
+              <div id="soft-two-1" class="col s12"><img src="./images/products/miakgiy/kvartet/front.jpg" alt="">
+              </div>
             </div>
             <div class="col s6">
               <div class="card-panel z-depth-4">
-                <h2>Книга стандартная</h2>
-
-                <p>Твердый переплет из картона толщиной 2 мм.</p>
-                <p>Сшивка блока внакидку на нитку, листы раскрываются на 180 градусов.</p>
-                <p>Обязательная ламинация обложки и форзаца. Внутренние листы ламинируются по желанию.</p>
-                <p>Виды ламинации: глянцевая, матовая, антицарапин.</p>
-                <p>На 1 печатный лист внутреннего блока помещается 4 страницы.</p>
+                <p>Двухсторонняя печать на бумаге 300 грамм с обязательной двухсторонней ламинацией, биговка.</p>
+                <p>В квартете помещается 8 страниц.</p>
                 <button class="btn waves-effect waves-light modal-trigger" data-target="order">Заказать</button>
               </div>
-              <h2>Размеры:</h2>
-
-
+              <h3>Скачать шаблоны:</h3>
+              <div class="downloads">
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/мягкий переплет/квартет/20х30.zip')">20x30</button>
+              </div>
             </div>
           </div>
         </div>
@@ -697,18 +734,176 @@
       <div id="soft-three" class="modal">
         <div class="modal-content">
           <h3>Разворот</h3>
+          <div class="row">
+            <div class="col s6">
+              <ul id="tabs-swipe-demo" class="tabs tabs-fixed-width">
+                <li class="tab"><a class="active" href="#soft-three-1">№1</a></li>
+              </ul>
+              <div id="soft-three-1" class="col s12"><img src="./images/products/miakgiy/kvartet/front.jpg" alt="">
+              </div>
+            </div>
+            <div class="col s6">
+              <div class="card-panel z-depth-4">
+                <p>Мягкий переплёт.</p>
+                <p>Двухсторонняя печать на бумаге 300 грамм с обязательной двухсторонней ламинацией, биговка.</p>
+                <p>В развороте помещается 4 страницы.</p>
+                <button class="btn waves-effect waves-light modal-trigger" data-target="order">Заказать</button>
+              </div>
+              <h3>Скачать шаблоны:</h3>
+              <div class="downloads">
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/мягкий переплет/разворот/шаблон.zip')">Шаблон</button>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
       <div id="soft-four" class="modal">
         <div class="modal-content">
           <h3>Супержурнал</h3>
+          <div class="row">
+            <div class="col s6">
+              <ul id="tabs-swipe-demo" class="tabs tabs-fixed-width">
+                <li class="tab"><a class="active" href="#soft-four-1">№1</a></li>
+              </ul>
+              <div id="soft-four-1" class="col s12"><img src="./images/products/miakgiy/kvartet/front.jpg" alt="">
+              </div>
+            </div>
+            <div class="col s6">
+              <div class="card-panel z-depth-4">
+                <p>Мягкий переплёт. Обложка склеивается из двух листов бумаги 300 грамм с обязательной ламиницией.</p>
+                <p>Сшивка на нитку (журнал раскрывается на 180 градусов).</p>
+                <p>Виды ламинации: глянцевая, матовая.</p>
+                <p>На 1 печатный лист внутреннего блока помещается 4 страницы.</p>
+                <button class="btn waves-effect waves-light modal-trigger" data-target="order">Заказать</button>
+              </div>
+              <h3>Скачать шаблоны:</h3>
+              <div class="downloads">
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/мягкий переплет/супержурнал/шаблоны/19х25.zip')">19x25</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/мягкий переплет/супержурнал/шаблоны/20х20.zip')">20x20</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/мягкий переплет/супержурнал/шаблоны/20х30.zip')">20x30</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/мягкий переплет/супержурнал/шаблоны/20х30-горизонт.zip')">20x30
+                  гориз.</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/мягкий переплет/супержурнал/шаблоны/22х25.zip')">22x25</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/мягкий переплет/супержурнал/шаблоны/22х30.zip')">22x30</button>
+                <button class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/мягкий переплет/супержурнал/шаблоны/30х30.zip')">30x30</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <div id="soft-five" class="modal">
         <div class="modal-content">
           <h3>Трио</h3>
+          <div class="row">
+            <div class="col s6">
+              <ul id="tabs-swipe-demo" class="tabs tabs-fixed-width">
+                <li class="tab"><a class="active" href="#soft-five-1">№1</a></li>
+              </ul>
+              <div id="soft-five-1" class="col s12"><img src="./images/products/miakgiy/kvartet/front.jpg" alt="">
+              </div>
+            </div>
+            <div class="col s6">
+              <div class="card-panel z-depth-4">
+                <p>Мягкий переплёт. Двухсторонняя печать на бумаге 300 грамм с обязательной двухсторонней ламинацией,
+                  биговка.</p>
+                <p>В трио помещается 6 страниц.</p>
+                <button class="btn waves-effect waves-light modal-trigger" data-target="order">Заказать</button>
+              </div>
+              <h3>Скачать шаблоны:</h3>
+              <div class="downloads">
+                <button type="submit" class="btn waves-effect waves-light"
+                  onclick="window.open('./downloads/мягкий переплет/трио/шаблон для трио.zip')">Шаблон</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!--Сувениры-->
+      <div id="suv-one" class="modal">
+        <div class="modal-content">
+          <h3>Значки</h3>
+          <button class="btn waves-effect waves-light modal-trigger" data-target="order">Заказать</button>
+        </div>
+      </div>
+
+      <div id="suv-two" class="modal">
+        <div class="modal-content">
+          <h3>Календари</h3>
+          <button class="btn waves-effect waves-light modal-trigger" data-target="order">Заказать</button>
+        </div>
+      </div>
+
+      <div id="suv-three" class="modal">
+        <div class="modal-content">
+          <h3>Кружки</h3>
+          <button class="btn waves-effect waves-light modal-trigger" data-target="order">Заказать</button>
+        </div>
+      </div>
+
+      <div id="suv-four" class="modal">
+        <div class="modal-content">
+          <h3>Рамка магнит</h3>
+          <button class="btn waves-effect waves-light modal-trigger" data-target="order">Заказать</button>
+        </div>
+      </div>
+
+      <div id="suv-five" class="modal">
+        <div class="modal-content">
+          <h3>Магниты</h3>
+          <button class="btn waves-effect waves-light modal-trigger" data-target="order">Заказать</button>
+        </div>
+      </div>
+
+      <div id="suv-six" class="modal">
+        <div class="modal-content">
+          <h3>Холсты</h3>
+          <button class="btn waves-effect waves-light modal-trigger" data-target="order">Заказать</button>
+        </div>
+      </div>
+
+      <!--Заказ-->
+      <div id="order" class="modal order-modal">
+        <div class="modal-content">
+          <h4>Заказать</h4>
+          <div class="row">
+            <form id="callform" class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input name="client_name" id="first_name" type="text" class="validate" required="">
+                  <label for="first_name">Имя</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input name="client_phone" id="last_name" type="text" class="validate" placeholder="+375" required="">
+                  <label for="last_name" class="active">Номер</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input name="client_mail" id="email" type="email" class="validate" required="">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <button class="btn waves-effect waves-light modal-close" type="submit" name="mail.php">Отправить
+                <i class="material-icons right">send</i>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
